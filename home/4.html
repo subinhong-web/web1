@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,343 @@
             width: 60px;
             height: 15px;
         }
+
+        #body {
+            background-size: cover;
+        }
+
+        #img_top {
+            width: 20px;
+            height: 20px;
+        }
     </style>
 </head>
-<body>
-    <h1>좋아하는 음식 선택
+
+<body background="./음식 이미지2.png">
+    <audio src="./lazy-day-stylish-futuristic-chill-239287.mp3" autoplay loop muted></audio>
+
+    <h1>선호하는 음식 선택
         <img src="./접시 사진.png" id="img_id8" alt="접시 사진">
-    </h1> 
+    </h1>
     <hr>
+    <h2>음식 선택하기</h2>
+    <div>
+        <ol type="1">
+            <li>찌개
+                <input type="checkbox">
+            </li>
+            <li>덮/볶음밥
+                <input type="checkbox">
+            </li>
+            <li>국
+                <input type="checkbox">
+            </li>
+            <li>야식/술안주
+                <input type="checkbox">
+            </li>
+            <li>면
+                <input type="checkbox">
+            </li>
+            <li>특식
+                <input type="checkbox">
+            </li>
+            <li>밑반찬
+                <input type="checkbox">
+            </li>
+            <li>간식
+                <input type="checkbox">
+            </li>
+            <li>기타 :
+                <input type="text" placeholder="기타 사항을 입력 하세요.">
+                <input type="submit" max="15">
+            </li>
+        </ol>
+    </div>
+    <h3>세부 사항 선택</h3>
+    <mark>찌개</mark> <br>
+    <hr>
+    <div>
+        <ol type="none">
+            <li>청국장찌개
+                <input type="radio" name="food">
+            </li>
+            <li>순두부찌개
+                <input type="radio" name="food">
+            </li>
+            <li>고추장찌개
+                <input type="radio" name="food">
+            </li>
+            <li>부대찌개
+                <input type="radio" name="food">
+            </li>
+            <li>전찌개
+                <input type="radio" name="food">
+            </li>
+            <li>비지찌개
+                <input type="radio" name="food">
+            </li>
+            <li>김치찌개
+                <input type="radio" name="food">
+            </li>
+            <li>고추장찌개
+                <input type="radio" name="food">
+            </li>
+            <li>된장찌개
+                <input type="radio" name="food">
+            </li>
+            <li>동태찌개
+                <input type="radio" name="food">
+            </li>
+        </ol>
+    </div>
+    <mark>덮/볶음밥</mark>
+    <hr>
+    <div>
+        <ol type="none">
+            <li>비빔밥
+                <input type="radio" name="rice">
+            </li>
+            <li>오므라이스
+                <input type="radio" name="rice">
+            </li>
+            <li>제육덮밥
+                <input type="radio" name="rice">
+            </li>
+            <li>카레덮밥
+                <input type="radio" name="rice">
+            </li>
+            <li>김치덮밥
+                <input type="radio" name="rice">
+            </li>
+            <li>오징어덮밥
+                <input type="radio" name="rice">
+            </li>
+            <li>짜장밥
+                <input type="radio" name="rice">
+            </li>
+            <li>야채볶음밥
+                <input type="radio" name="rice">
+            </li>
+            <li>간장밥
+                <input type="radio" name="rice">
+            </li>
+        </ol>
+    </div>
+    <mark>국</mark>
+    <hr>
+    <div>
+        <ol type="1">
+            <li>육개장
+                <input type="radio" name="soup">
+            </li>
+            <li>떡국
+                <input type="radio" name="soup">
+            </li>
+            <li>미역국
+                <input type="radio" name="soup">
+            </li>
+            <li>콩나물국
+                <input type="radio" name="soup">
+            </li>
+            <li>북엇국
+                <input type="radio" name="soup">
+            </li>
+            <li>소고기무국
+                <input type="radio" name="soup">
+            </li>
+            <li>시래깃국
+                <input type="radio" name="soup">
+            </li>
+            <li>된장국
+                <input type="radio" name="soup">
+            </li>
+            <li>감잣국
+                <input type="radio" name="soup">
+            </li>
+        </ol>
+    </div>
+    <mark>야식/술안주</mark>
+    <hr>
+    <div>
+        <ol type="1">
+            <li>두부김치
+                <input type="radio" name="last_night meal">
+            </li>
+            <li>튀김
+                <input type="radio" name="last_night meal">
+            </li>
+            <li>소시지 야채볶음
+                <input type="radio" name="last_night meal">
+            </li>
+            <li>콘치즈
+                <input type="radio" name="last_night meal">
+            </li>
+            <li>골뱅이 무침
+                <input type="radio" name="last_night meal">
+            </li>
+            <li>부침개
+                <input type="radio" name="last_night meal">
+            </li>
+            <li>어묵탕
+                <input type="radio" name="last_night meal">
+            </li>
+            <li>닭똥집 볶음
+                <input type="radio" name="last_night meal">
+            </li>
+            <li>순대볶음
+                <input type="radio" name="last_night meal">
+            </li>
+        </ol>
+    </div>
+    <mark>면</mark>
+    <hr>
+    <div>
+        <ol type="1">
+            <li>라면
+                <input type="radio" name="noodles">
+            </li>
+            <li>스파게티
+                <input type="radio" name="noodles">
+            </li>
+            <li>쫄면
+                <input type="radio" name="noodles">
+            </li>
+            <li>잔치국수
+                <input type="radio" name="noodles">
+            </li>
+            <li>우육면
+                <input type="radio" name="noodles">
+            </li>
+            <li>칼국수
+                <input type="radio" name="noodles">
+            </li>
+            <li>우동
+                <input type="radio" name="noodles">
+            </li>
+            <li>쌀국수
+                <input type="radio" name="noodles">
+            </li>
+            <li>콩국수
+                <input type="radio" name="noodles">
+            </li>
+        </ol>
+    </div>
+    <mark>특식</mark>
+    <hr>
+    <div>
+        <ol type="1">
+            <li>갈비찜
+                <input type="radio" name="special">
+            </li>
+            <li>닭볶음탕
+                <input type="radio" name="special">
+            </li>
+            <li>스테이크
+                <input type="radio" name="special">
+            </li>
+            <li>아귀찜
+                <input type="radio" name="special">
+            </li>
+            <li>삼계탕
+                <input type="radio" name="special">
+            </li>
+            <li>수육
+                <input type="radio" name="special">
+            </li>
+            <li>월남쌈
+                <input type="radio" name="special">
+            </li>
+            <li>불고기
+                <input type="radio" name="special">
+            </li>
+            <li>수육
+                <input type="radio" name="special">
+            </li>
+        </ol>
+    </div>
+    <mark>밑반찬</mark>
+    <hr>
+    <div>
+        <ol type="1">
+            <li>연근조림
+                <input type="radio" name="side_dish">
+            </li>
+            <li>시금치 무침
+                <input type="radio" name="side_dish">
+            </li>
+            <li>감자조림
+                <input type="radio" name="side_dish">
+            </li>
+            <li>감자채 볶음
+                <input type="radio" name="side_dish">
+            </li>
+            <li>장조림
+                <input type="radio" name="side_dish">
+            </li>
+            <li>진미채 볶음
+                <input type="radio" name="side_dish">
+            </li>
+            <li>콩조림
+                <input type="radio" name="side_dish">
+            </li>
+            <li>콩나물 무침
+                <input type="radio" name="side_dish">
+            </li>
+            <li>멸치볶음
+                <input type="radio" name="side_dish">
+            </li>
+        </ol>
+    </div>
+    <mark>간식</mark>
+    <hr>
+    <div>
+        <ol type="1">
+            <li>토스트
+                <input type="radio" name="snack">
+            </li>
+            <li>또띠아 피자
+                <input type="radio" name="snack">
+            </li>
+            <li>떡꼬치
+                <input type="radio" name="snack">
+            </li>
+            <li>쿠키
+                <input type="radio" name="snack">
+            </li>
+            <li>떡볶이
+                <input type="radio" name="snack">
+            </li>
+            <li>호떡
+                <input type="radio" name="snack">
+            </li>
+            <li>샌드위치
+                <input type="radio" name="snack">
+            </li>
+            <li>시리얼
+                <input type="radio" name="snack">
+            </li>
+            <li>팝시클
+                <input type="radio" name="snack">
+            </li>
+        </ol>
+        <hr>
+    </div>
+    <div>
+        이름 : 
+        <input type="text" placeholder="이름을 입력 하세요.">
+        나이 : 
+        <input type="number" min="7" max="150"><br>
+        e-mail : 
+        <input type="email" placeholder="e-mail을 입력 하세요.">
+        <input type="date" min="2025-02-21" max="2025-02-28">
+        <input type="submit">
+    </div>
+    <div>
+        <a href="#top"> 맨 위로 가기
+            <img src="./이동 스크롤.png" id="img_top" alt="맨 위">
+        </a>
+    </div>
 
 </body>
+
 </html>
