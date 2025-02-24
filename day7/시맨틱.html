@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시맨틱 태그</title>
+    <style>
+        body{
+            position: relative;
+        }
+        aside{
+            width: 300px;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: 300px;
+        }
+        aside > img{
+            width: 300px;
+        }
+        main{
+            margin-left: 350px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div>제목</div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis quas nisi, voluptate ipsam rerum, corporis hic vero sit, qui provident officia beatae facilis architecto adipisci tempore harum vitae exercitationem?
+    </div> 
+    위에건 옛날 방식. -->
+
+    <!-- <section>
+        <h1>제목</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa eaque deleniti perspiciatis saepe sint, esse optio nisi ipsum? Cum eveniet alias ex voluptatem ipsa placeat maxime quo! Eveniet, est minus.
+        </p>
+    </section> -->
+    <!-- 이것이 가독성이 훨씬 좋음. -->
+
+    <header>
+        <h1>Logo</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">회사정보</a>
+                </li>
+                <li>
+                    <a href="">회사소개</a>
+                </li>
+                <li>
+                    <a href="">contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- 메뉴의 기본 구조 
+             클릭해서 어디로 이동하는 것 만 nav
+            article 문서나 페이지 내에서 재사용 가능한 영역을 묶어주는 용도(게시판,뉴스), 똑같은 내용이 출력되어야 할 때 하나의 독립적인 태그
+            figure는 이미지 삽입.-->
+    </header>
+    <main>
+        <article>
+            <h2>짱구</h2>
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/ko/thumb/4/4a/%EC%8B%A0%EC%A7%B1%EA%B5%AC.png/230px-%EC%8B%A0%EC%A7%B1%EA%B5%AC.png" alt="짱구 사진">
+            </figure>
+            <p>짱구는 이슬이 누나만 보면 기분이 좋아요.</p>
+        </article>
+    <main>
+        <article>
+            <h2>짱구</h2>
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/ko/thumb/4/4a/%EC%8B%A0%EC%A7%B1%EA%B5%AC.png/230px-%EC%8B%A0%EC%A7%B1%EA%B5%AC.png" alt="짱구 사진">
+            </figure>
+            <p>짱구는 이슬이 누나만 보면 기분이 좋아요.</p>
+        </article>
+     
+    </main>
+    <aside>
+        <h3>광고가 들어갈듯</h3>
+        <p>
+            aside는 주로 문서의 내용과 관련 없는 별도로 분리된 추가 정보를 제공한다. 광고나 배너를 보여줄 때 많이 사용한다.
+        </p>
+        <img src="https://i.pinimg.com/736x/53/7e/f5/537ef59499259ba707068742f91a10f8.jpg" alt="일단 짱구">
+    </aside>
+</body>
+
+</html>
