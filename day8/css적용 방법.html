@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css적용 방법</title>
+    
+    <!-- 내부 스타일 시트 
+    외부 스타일 시트보다 재사용성 떨어짐
+    HTML문서 내에 css가 들어가는 ㄴ방법으로, 다양한 예제파일을 만들어야한 수업 특성 상 내부 스타일 사용할것
+    실제 작업은 외부 스타일 사용-->
+    <style>
+        p{
+            color: powderblue;
+        }
+    </style>
+
+    <!-- 외부 스타일 시트. 우선순위에 영향을 받음.-->
+    <!-- 외부 스타일 시트는 가장 많이 사용하고 유용한 형태(재사용 가능)
+    일관된 디자인을 주로 하는 웹디자인, 퍼블 특성 상 재사용이 용이하다는 것은 큰 장점. 유지보수가 편해진다.-->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style2.css">
+
+</head>
+<body>
+    <h1>스타일 속성 실습</h1>
+    <!-- 인라인 스타일 
+    이런 방식으로 모든 디자인을 작성하게 되면 재사용을 해야하는 부분도 모두 다 다시 수정해야 한다.
+    일반적인 웹 개발 방식에서는 아주 기피하는 방식.-->
+
+    <p style="color: blue;">인라인 스타일</p>
+    <!-- 실제로는 P태그에 스타일 적용하면 안됨. 원래 css적용 안됨-->
+    <p>브라운 텍스트</p>
+    <p class="yellow_text">노란색 텍스트</p>
+</body>
+</html>

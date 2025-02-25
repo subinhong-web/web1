@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css문법</title>
+    <style>
+        h1 {
+            color: darkcyan;
+            font-size: 50px;
+            /* css는 html과 주석 스타일이 다름
+            속성(프로퍼티): 속성값(벨류값); */
+        }
+        #id_section {
+            background-color: teal;
+        }
+        #id_section > h2{
+            color: aqua;
+        }
+        /* 자식 선택자 > */
+        article span{
+            color: blueviolet;
+        }
+        .front_end_lang + li{
+            background-color: brown;
+        }
+        /* ~과 +가 있음. */
+        .p_tag,
+        h3,
+        #span_tag {
+            background-color: olivedrab;
+            color: #fff;
+            font-size: 24px;
+            display: block;
+        }
+    </style>
+    <!-- 스타일의 h1부분은 선택자 또는 셀렉터라고도 부름
+        스타일 내부 파란 글자들은 속성, 뒤의 주황 글씨들은 속성값.-->
+</head>
+
+<body>
+    <h1>클래스 문법 실습</h1>
+    <section id="id_section">
+        <h2 class="red_text">아이디 선택자</h2>
+    </section>
+    <!-- ul>li*3에서 >는 자식선택자 -->
+    <h2 class="red_text">아이디 선택자</h2>
+
+    <article>
+        <div>
+            나는 이렇게 글을 작성하다가 
+            <span class="color_change">이 부분만 색상 변경</span>
+        </div>
+        <section>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo maxime dolorum sunt corrupti ducimus saepe odio, hic nesciunt illo nisi nobis quibusdam sit consequatur dolorem ratione quod alias ea nemo.
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque ex minus atque consequatur quisquam nobis veniam et, fugit mollitia repudiandae neque eveniet saepe deleniti aperiam pariatur fuga, temporibus aut.
+                <span>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, accusantium similique facilis repellendus ipsum vel repudiandae adipisci porro! Vero dolore ratione voluptatum accusamus, illum cupiditate odio modi blanditiis accusantium eligendi.
+                </span>
+            </p>
+        </section>
+    </article>
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li class="front_end_lang">js</li>
+        <li>react</li>
+        <li>vue</li>
+    </ul>
+
+    <div>
+        <p class="p_tag">p태그</p>
+        <h3>해딩3</h3>
+        <span id="span_tag">span태그</span>
+        <!-- p.p_tag를 작성하면 class 자동 부여 -->
+    </div>
+</body>
+
+</html>
