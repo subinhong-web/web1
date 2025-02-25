@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,26 +15,32 @@
             align-items: center;
             transition: 0.5s;
         }
-        .box_text{
+
+        .box_text {
             color: yellowgreen;
             font-size: 50px;
             font-weight: 900;
             transition: 0.5s;
         }
+
         .box:hover {
             background-color: black;
             transition: 0.5s;
         }
-        .box:hover .box_text{
+
+        .box:hover .box_text {
             color: azure;
         }
+
         /* 후손 선택자 */
         /* hover는 선택자를 사용해서 마우스를 요소 위에 올렸을 때 적용되는 스타일을 정의 */
     </style>
 </head>
+
 <body>
     <div class="box">
         <p class="box_text">박스 입니다.</p>
     </div>
 </body>
+
 </html>
