@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 선택자</title>
+    <style>
+        .japan_food > li:last-child {
+            color: blueviolet;
+        }
+        /* li:last-child 마지막 문단 */
+        .japan_food > li:nth-child(even){
+            color: red;
+        }
+        /* li:nth-child(3)원하는 순서에 있는 요소만 색상 가능 
+        odd 홀수 even짝수*/
+    </style>
+</head>
+<body>
+    <ul class="japan_food">
+        <li>초밥</li>
+        <li>가츠동</li>
+        <li>우동</li>
+        <li>라멘</li>
+        <li>소바</li>
+    </ul>
+</body>
+</html>
