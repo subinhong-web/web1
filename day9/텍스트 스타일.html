@@ -5,49 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>텍스트 스타일</title>
-
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap" rel="stylesheet"> -->
-
     <style>
-        @font-face {
-            font-family: 'Ownglyph_StudyHard-Rg';
-            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_StudyHard-Rg.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: 'Ownglyph_wiseelist-Rg';
-            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2501-1@1.1/Ownglyph_wiseelist-Rg.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: 'Pink';
-            src: url(./Pinky\ Show.ttf);
-        }
-
-        .custom_font {
-            font-family: 'Pink';
-        }
-
-        .black-and-white-picture-regular {
-            font-family: "Black And White Picture", serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        /* 폰트 파일 추가는 용량이 커지는 대신에 파일을 포함하고 있어 링크가 잘못될 일이 없음.
-        링크를 가져 오면 잘못될 일이 생길 수 있음 */
-
-        body {
-            /* font-family: 'Ownglyph_StudyHard-Rg'; */
-            font-family: "Black And White Picture", serif;
-        }
-
         h1 {
             color: red;
             font-size: 50px;
@@ -58,7 +16,6 @@
         2em을 주면 36px 
         rem : 부모 요소와 관련 없이 최상위 요소의 크기가 달라질 때만 영향을 받음. html(16px가 기본)*/
         /* 크롬 폰트 확장 프로그램 whatfont 웹 폰트 확인 가능 */
-        /* 크롬 사이트 눈누 구글 폰트 검색 해도 다른 사이트 나옴, 다폰드*/
         p {
             font-weight: bold;
         }
@@ -85,11 +42,10 @@
         .text_align_center {
             text-align: center;
         }
-
+        
         /* vertical실습 */
         .vertical_contaner {
             font-size: 50px;
-            font-family: 'Ownglyph_wiseelist-Rg';
         }
 
         .vertical_1>span {
@@ -126,28 +82,24 @@
         }
 
         /* line_hight실습 */
-        .line_hight>p:first-child {
+        .line_hight > p:first-child {
             line-height: 60px;
         }
-
-        .line_hight>p:nth-child(2) {
+        .line_hight > p:nth-child(2) {
             line-height: 1.5;
             font-size: 40px;
         }
-
         /* font-size에 1.5를 곱하면 수치값 직접 확인 가능. */
 
-        .line_hight>p:last-child {
+        .line_hight > p:last-child {
             line-height: 500%;
         }
-
         /* %로 작성 하면 원래 픽셀의 *2만큼 늘어남 (16px*2) */
 
-        .letter_spacing1 {
+        .letter_spacing1{
             letter-spacing: 10px;
         }
-
-        .letter_spacing2 {
+        .letter_spacing2{
             letter-spacing: -10px;
         }
     </style>
@@ -211,11 +163,6 @@
 
     <p class="letter_spacing1"> 자간을 설정합니다.</p>
     <p class="letter_spacing2"> 자간을 설정합니다.</p>
-
-    <p class="custom_font">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi eum officia suscipit aliquam, eaque a inventore
-        at ut maiores praesentium neque sunt laboriosam nam illum error molestiae ex, repudiandae explicabo?
-    </p>
 </body>
 
 </html>
