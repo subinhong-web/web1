@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 박스 모델</title>
+    <!-- 이번 것은 매우 중요함. 무조건 정확하게 알고 있어야 함.-->
+    <!-- margin : 마진은 요소와 주변 사이의 공간을 뜻한다. 테두리(border) 바깥의 영역이기 때문에 다른 요소와 간격을 띄울 때 사용. 
+    다른 요소와 마진이 중복되면 겹쳐짐-->
+    <!-- padding : 보더 안에 존재하며 콘텐츠 영역과 테두리(border) 사이의 간격을 띄울 때 사용. 콘텐츠에 부여한 컬러가 패딩에도 들어감. 콘텐츠에 포함된다는 뜻.-->
+    <!-- boder: 콘텐츠의 경계. 콘텐츠 가장자리에 그려지는 외곽선을 뜻함. -->
+    <!-- content : 우리가 태그 안에 작성한 내용물 혹은 스타일로 만들어낸 내용물 -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            width: 300px;
+            height: 200px;
+            border: 16px solid#000;
+            background-color: gray;
+            padding: 25px;
+            /* margin: 30px; */
+        }
+        .box2 {
+            width: 300px;
+            height: 200px;
+            /* border: 16px solid#000; */
+            border-top: 5px solid #000;
+            border-bottom: 30px double #256944;
+            border-left: 5px dashed rgb(96, 134, 134);
+            border-right: 10px dotted #999;
+            background-color: rgb(66, 95, 175);
+            padding: 25px;
+            /* border도 여러 지정자가 있음. */
+            
+            /*  한 면씩 지정하는 방법
+            margin-top: 50px;
+            margin-right: 30px;
+            margin-bottom: 10px;
+            margin-left: 100px; */
+            /* t -> r -> b => l 순서로 시계방향 */
+            /* margin: 50px 30px 10px 100px; */
+
+            /* margin: 30px 50px; */
+            /* 먼저 쓰는 것이 상,하 나중에 쓰이는 것이 좌,우 */
+
+            margin: 15px 50px 70px;
+            /* t - r,l - b 순서로 들어감. */
+        }
+
+        .box_size {
+            background-color: aquamarine;
+            width: 300px;
+            height: 300px;
+            margin: 30px;
+            padding: 30px;
+            border: 30px solid #256944;
+            box-sizing: border-box;
+        }
+        /* .box_size2 {
+            background-color: aquamarine;
+            width: 300px;
+            height: 300px;
+            margin: 30px;
+            padding: 30px;
+            border: 30px solid #256944;
+            /* box-sizing: border-box; }*/
+        
+            .box_size {
+                box-sizing: border-box;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+    <div class="box_size"></div>
+    <div class="box_size2"></div>
+</body>
+
+</html>
