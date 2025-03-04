@@ -7,13 +7,16 @@
     <title>position</title>
     <!-- 웹 페이지 내 마음대로 움직일 수 있는 사항.(스크롤) 매우 중요함. -->
     <style>
+        body{
+            height: 5000px;
+        }
         .container {
             position: relative;
             width: 1000px;
             border: 1px solid red;
             height: 500px;
             margin: 50px;
-
+            margin-left: 0;
         }
         /* position: relative;는 기준점. 기준을 없애면 body를 기준으로 하고 있기 때문에 삐져나옴.
         relative 내가 위치 시키고 싶은 부분에 부모 요소로 와야만 함*/
@@ -27,30 +30,68 @@
             text-align: center;
             line-height: 50px;
         }
+
+        p{
+            position: absolute;
+        }
         /* position: absolute; 코드는 아래로 읽기 때문에 맨 뒤에 작성한 것이 위로 올라옴 */
+
         .b1{
             background-color: rgb(21, 179, 179);
+            z-index: 999;
         }
         .b2{
             background-color: rgb(22, 175, 142);
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
+            top: 10px;
+            left: 50px;
+            z-index: 99;
+            /* transform: translate(-50%,-50%); */
         }
         /* transform: translate(-50%,-50%); 정 중앙으로 위치 */
+        /* z-index는 무조건 position이 있어야 사용 가능 양수,음수 다 가능 보통 99,999까지만 사용 */
+        
         .b3{
+            top: 30px;
+            left: 20px;
             background-color: rgb(20, 187, 84);
-            bottom: 0;
-            right: 0;
+            /* bottom: 0;
+            right: 0; */
+        }
+
+        .top_btn{
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 900;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="top">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptas dolore dolorum corporis ducimus rerum, quisquam ullam tenetur exercitationem temporibus quibusdam cum tempore placeat! Quis similique assumenda dolorum aliquid nisi?
+        </p>
         <div class="box b1">왼쪽 위</div>
         <div class="box b2">중간</div>
         <div class="box b3">오른쪽 아래</div>
+    </div>
+
+    <div class="top_btn">
+        <a href="#top">
+            TOP
+        </a>
     </div>
 </body>
 
