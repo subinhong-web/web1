@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex1</title>
+    <!-- 매우 중요하니 꼭 외워야 함 
+    flex는 flex속성을 부여할 컨테이너가 필요함 : section,article,div
+    가로 정렬 할 아이템들을 flex 컨테이너로 묶어주면 됨
+    wrap : 줄바꿈 아이템들이 부모 요소 영역을 넘어가면 width가 작아짐.width가 작아지는게 싫다면 줄바꿈 하면 아래로 내려감 (반응형)
+    direction : 기본 값은 row/세로로 정렬하고 싶다면 column/역순 : reverse
+    flex-flow : direction과 wrap을 한꺼번에 작성 가능
+    justify-content : start (기본값) end(끝지점에 가서 붙음) center(가운데 정렬) between (양 끝 여백 없이 콘텐츠 사이에만 여백 나눠먹음) around(콘텐츠를 기준으로 양옆에 여백이 생겨서 1 2 2 1 구조) evenly(양 끝도 같은 비율로 여백 같이 나눠먹음)-->
+    <style>
+        .flex_contaner {
+            border: 5px solid red;
+            display: flex;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            flex-wrap: wrap-reverse;
+        }
+
+        /* flex-direction: column,row,column-reverse,row-reverse */
+        /* flex-wrap: wrap; 줄바꿈. 반응형 웹 제작 시 유용 wrap-reverse 역순*/
+        .flex {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 300px;
+            font-size: 24px;
+            font-weight: 900;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="flex_contaner">
+        <div class="flex">1</div>
+        <div class="flex">2</div>
+        <div class="flex">3</div>
+        <div class="flex">4</div>
+        <div class="flex">5</div>
+        <div class="flex">6</div>
+        <div class="flex">7</div>
+        <div class="flex">8</div>
+
+    </section>
+</body>
+
+</html>
