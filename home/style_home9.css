@@ -15,8 +15,9 @@ header {
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-    
+
 }
+
 .sticky {
     width: 1800px;
     height: 150px;
@@ -33,7 +34,7 @@ header {
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-    color: rgb(0,0,0);
+    color: rgb(0, 0, 0);
     text-align: row;
 }
 
@@ -66,10 +67,10 @@ a {
     height: 100%;
     object-fit: cover;
 }
+
 .sticky_1 {
     border: 1px solid #000;
-    display: flex;   
+    display: flex;
 }
-.sticky_home {
-    
-}
+
+.sticky_home {}
