@@ -1,23 +1,115 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>숙제</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        header,
+        .header_search {
+            display: flex;
+            justify-content: center;
+            height: 80px;
+            padding: 16px 32px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            padding: 0;
+        }
+
+        li {
+            text-align: center;
+            list-style: none;
+        }
+
+        .btn_login>button:hover {
+            background-color: rgb(147, 184, 171);
+        }
+
+        .btn_login>button:hover>a {
+            color: rgb(32, 75, 60);
+        }
+
+        .btn_login>button>a {
+            padding: 16px;
+            text-decoration: none;
+            color: rgb(113, 167, 149);
+            font-size: 20px;
+            font-weight: 800;
+        }
     </style>
 </head>
+
 <body>
-    <section>
-        <header>
+    <header>
+        <div class="header_search">
             <figure class="main_trip">
-                <img src="" alt="">
+                <img src="./trip.svg" alt="메인 비행기 이미지">
             </figure>
-            <div class="icon">
-                
+            <div class="search">
+                <input type="text" placeholder="숙박페스타를 검색해보세요">
+                <img src="./search.svg" alt="찾기 버튼 이미지">
             </div>
-        </header>
-    </section>
+            <ul>
+                <li>
+                    <div class="menu"></div>
+                    <a href="#">항공</a>
+                </li>
+                <li>
+                    <div class="menu"></div>
+                    <a href="#">해외숙소</a>
+                </li>
+                <li>
+                    <div class="menu"></div>
+                    <a href="#">국내숙소</a>
+                </li>
+                <li>
+                    <div class="menu"></div>
+                    <a href="#">해외골프</a>
+                </li>
+                <li>
+                    <div class="menu"></div>
+                    <a href="#">투어/티켓</a>
+                </li>
+                <li>
+                    <div class="menu"></div>
+                    <a href="#">크루즈/페리</a>
+                </li>
+                <li>
+                    <div class="menu"></div>
+                    <a href="#">여행자 보험</a>
+                </li>
+            </ul>
+            <div class="btn_login">
+                <button>
+                    <a href="#">로그인</a>
+                </button>
+                <button>
+                    <a href="#">회원가입</a>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <p>런던</p>
+        </div>
+    </main>
 </body>
+
 </html>
