@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+        }
+
+        article {
+            /* border: 1px solid black; */
+            border-radius: 16px;
+            width: 250px;
+            height: 333px;
+            margin: 16px;
+            position: relative;
+            background-color: black;
+        }
+
+        article:hover figure {
+            opacity: 1;
+        }
+
+        .img_1 {
+            width: 100%;
+            height: 100%;
+            background-image: url(./바르셀로나.jpg);
+            margin: 0;
+            background-size: 350px 333px;
+            border-radius: 16px;
+            opacity: 0.9;
+            transition: 0.3s;
+            box-shadow: 10px 10px 30px #818181;
+        }
+
+        .img_2 {
+            width: 100%;
+            height: 100%;
+            background-image: url(./방콕.jpg);
+            margin: 0;
+            background-size: 350px 333px;
+            border-radius: 16px;
+            opacity: 0.9;
+            transition: 0.3s;
+            box-shadow: 10px 10px 30px #818181;
+        }
+
+        .img_3 {
+            width: 100%;
+            height: 100%;
+            background-image: url(./오사카.jpg);
+            margin: 0;
+            background-size: 350px 333px;
+            border-radius: 16px;
+            opacity: 0.9;
+            transition: 0.3s;
+            box-shadow: 10px 10px 30px #818181;
+        }
+
+        .img_4 {
+            width: 100%;
+            height: 100%;
+            background-image: url(./도쿄.jpg);
+            margin: 0;
+            background-size: 350px 333px;
+            border-radius: 16px;
+            opacity: 0.9;
+            transition: 0.3s;
+            box-shadow: 10px 10px 30px #818181;
+        }
+
+        .text {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            margin-right: 16px;
+        }
+
+        .text>h2 {
+            color: aliceblue;
+            font-size: 28px;
+            margin-top: 16px;
+        }
+
+        .btn {
+            margin-bottom: 16px;
+        }
+
+        .btn>button {
+            background-color: rgb(252, 238, 217);
+            border: none;
+            border-radius: 8px;
+            transition: 0.3;
+        }
+
+        .btn>button>a {
+            padding: 8px 16px;
+            display: block;
+            color: #636262;
+            text-decoration: none;
+            font-weight: 900;
+            transition: 0.3s;
+        }
+
+        .btn>button:hover {
+            background-color: rgb(250, 249, 247);
+            transition: 0.3;
+        }
+
+        .btn>button:hover>a {
+            color: black;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <article class="main">
+            <figure class="img_1"></figure>
+            <div class="text">
+                <h2>바르셀로나</h2>
+                <div class="btn">
+                    <button>
+                        <a href="#">둘러보기</a>
+                    </button>
+                </div>
+            </div>
+        </article>
+        <article class="main">
+            <figure class="img_2"></figure>
+            <div class="text">
+                <h2>방콕</h2>
+                <div class="btn">
+                    <button>
+                        <a href="#">둘러보기</a>
+                    </button>
+                </div>
+            </div>
+        </article>
+        <article class="main">
+            <figure class="img_3"></figure>
+            <div class="text">
+                <h2>오사카</h2>
+                <div class="btn">
+                    <button>
+                        <a href="#">둘러보기</a>
+                    </button>
+                </div>
+            </div>
+        </article>
+        <article class="main">
+            <figure class="img_4"></figure>
+            <div class="text">
+                <h2>도쿄</h2>
+                <div class="btn">
+                    <button>
+                        <a href="#">둘러보기</a>
+                    </button>
+                </div>
+            </div>
+        </article>
+</body>
+
+</html>
