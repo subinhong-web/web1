@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유튜브 같이 만들기</title>
+    <script src="https://kit.fontawesome.com/6f1cb9abc0.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .comment_container {
+            display: flex;
+            max-width: 1200px;
+            justify-content: space-between;
+        }
+
+        figure,
+        figure > img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .basis{
+            flex-basis: 90%;
+        }
+
+        .user_name,
+        .comment_content {
+            font-size: 14px;
+        }
+
+        .icon_box {
+            display: flex;
+            margin: 10px 10px 10px 0;
+            align-items: center;
+        }
+
+        .icon_box > div:first-child {
+            margin-right: 16px;
+        }
+        .icon_box > div:nth-child(2) {
+            margin-right: 32px;
+        }
+
+        button {
+            background: none;
+            border: none;
+        }
+        .icon_box > p,
+        .icon_box > div > button > i {
+            color: #ddd;
+        }
+
+        .icon_box > div > span {
+            color: rgb(88, 88, 87);
+        }
+        .recomment > button {
+            color: #065fd4;
+        }
+    </style>
+</head>
+<body>
+    <article class="comment_container">
+        <figure>
+            <img src="./channels4_profile.jpg" alt="유저 이미지">
+        </figure>
+        <div class="basis">
+            <h2 class="user_name">@happybalbalhee</h2>
+            <p class="comment_content">지윤님 왜 짬 때리냐고요ㅜㅜㅜㅜㅜ</p>
+            <div class="icon_box">
+                <div>
+                    <button>
+                        <i class="fa-solid fa-thumbs-up fa-xl"></i>
+                    </button>
+                    <span>8.1천</span>
+                </div>
+                <div>
+                    <button>
+                        <i class="fa-solid fa-thumbs-down fa-xl"></i>
+                    </button>
+                </div>
+                <p>답글</p>
+            </div>
+
+            <div class="recomment">
+                <button>
+                    <i class="fa-solid fa-chevron-down fa-xl"></i>
+                    <span>답글1개</span>
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <button>
+                <i class="fa-solid fa-ellipsis-vertical fa-xl"></i>
+            </button>
+        </div>
+    </article>
+</body>
+</html>
